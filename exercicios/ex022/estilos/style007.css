@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+#container {
+    background-image: url(../imagens/target001.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    height: 500px;
+    background-color: purple;
+}
+
+#conteudo {
+    background-image: url(../imagens/target001.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    /*aplicando position: absolute, podemos alterar a posição com letf e top*/
+
+    height: 200px;
+    width: 400px;
+    background-color: yellow;
+    margin: auto;
+
+    left: 50%;
+    top: 50%;
+    /*Ao aplicar 50 porcento em left e top estamos indicando que o canto superior esquerdo do conteudo vai ficar exatamente no meio do container, sou seja mexemos no conteudo em relação ao container*/
+
+    transform: translate(-50%, -50%);
+    /*o transform: translate(-50%, -50%) indica que estamos mexendo com o conteudo em relação a ele mesmo*/
+}
