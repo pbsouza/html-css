@@ -2,16 +2,29 @@
 
 body {
     height: 100vh; /*100 porcento da viewport, ou seja da tela do meu navegador*/
+    
+    /*
     background-color: black;
     background-image: url("../imagens/wallpaper002.jpg");
     background-position: center center;
-    background-repeat: repeat y;
-    background-size: cover; /*cover ocupa 100 porcento da viewport*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    */
+
+    /*
+    ShortHand
+    color, image, position, repeat, size (na prática não funciona junto o size aqui, colocar fora), attachment
+    */
+
+    background: black url("../imagens/wallpaper002.jpg") center center no-repeat fixed;
+    background-size: cover;
+    
 }
 
 main {
     background-color: white;
-    width: 400px;
+    max-width: 400px;
     padding: 10px;
     margin: auto;
     text-align: justify;
