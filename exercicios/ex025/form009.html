@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulário (output)</title>
+</head>
+<body>
+    <h1>Trabalahndo com output</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="inum">Escolha um valor</label>
+            <input type="range" name="valor" id="inum" oninput="ivalor.innerHTML = (Number (inum.value))" value="1">
+            <output id="ivalor">1</output>
+        </p>
+
+    </form>
+</body>
+</html>
